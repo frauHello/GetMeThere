@@ -1,0 +1,135 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/buswallpaper"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/buswallpaper"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        >
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Book For buses"
+            android:textColor="@color/primary"
+            android:textSize="30dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Find a better way to travel"
+            android:textColor="@color/primary"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose your departure station"
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/select_station"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="departure station"
+                android:textColor="@color/primary"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/select_station"
+                android:popupBackground="@color/primary"
+                android:soundEffectsEnabled="true"></Spinner>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Choose your arrival station"
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/station_arrival"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" arrival station"
+                android:textColor="@color/primary"
+                android:textSize="18dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <Spinner
+                android:id="@+id/spinner_arrival"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/station_arrival"
+                android:layout_toRightOf="@+id/station_arrival"
+                android:popupBackground="@color/primary"
+                android:soundEffectsEnabled="true" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SEARCH FOR A SERVICE"
+            android:textStyle="bold|italic" />
+
+
+    </LinearLayout>
+
+</ScrollView>
+
